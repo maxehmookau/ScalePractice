@@ -24,6 +24,7 @@
 		5029AB981555522B0013DEA9 /* 20-no.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB941555522B0013DEA9 /* 20-no.png */; };
 		5029AB991555522B0013DEA9 /* 20-no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB951555522B0013DEA9 /* 20-no@2x.png */; };
 		50FF5C4515555628006256F1 /* Grade.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF5C4415555628006256F1 /* Grade.m */; };
+		50FF5C491555672E006256F1 /* ABRSMGrade1Piano.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FF5C481555672E006256F1 /* ABRSMGrade1Piano.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		5029AB951555522B0013DEA9 /* 20-no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-no@2x.png"; sourceTree = "<group>"; };
 		50FF5C4315555628006256F1 /* Grade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grade.h; path = ../Grade.h; sourceTree = "<group>"; };
 		50FF5C4415555628006256F1 /* Grade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grade.m; path = ../Grade.m; sourceTree = "<group>"; };
+		50FF5C481555672E006256F1 /* ABRSMGrade1Piano.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ABRSMGrade1Piano.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				5029AB6D15553ECA0013DEA9 /* ScalePractice */,
+				50FF5C47155566E9006256F1 /* Grades */,
 				5029AB6615553ECA0013DEA9 /* Frameworks */,
 				5029AB6415553ECA0013DEA9 /* Products */,
 			);
@@ -137,6 +140,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		50FF5C47155566E9006256F1 /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+				50FF5C481555672E006256F1 /* ABRSMGrade1Piano.plist */,
+			);
+			name = Grades;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +208,7 @@
 				5029AB971555522B0013DEA9 /* 19-check@2x.png in Resources */,
 				5029AB981555522B0013DEA9 /* 20-no.png in Resources */,
 				5029AB991555522B0013DEA9 /* 20-no@2x.png in Resources */,
+				50FF5C491555672E006256F1 /* ABRSMGrade1Piano.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

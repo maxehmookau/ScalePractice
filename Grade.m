@@ -18,13 +18,30 @@
 
 -(NSDictionary *)getNextScale
 {
-    int randomNumber = arc4random() % [notes count];
-    NSMutableDictionary *scale = [[NSMutableDictionary alloc] init];
-    [scale setValue:[notes objectAtIndex:randomNumber] forKey:@"Note"];
-    [scale setValue:[modes objectAtIndex:randomNumber] forKey:@"Mode"];
-    [scale setValue:[octaves objectAtIndex:randomNumber] forKey:@"Octaves"];
-    [scale setValue:[scaleTypes objectAtIndex:randomNumber] forKey:@"Type"];
-    return scale;
+    BOOL done = YES;
+    for(int x = 0; x < [completed count]; x++)
+    {
+        if([[completed objectAtIndex:x] isEqualToString:@"0"])
+        {
+            done = NO;
+        }
+    }
+    if(!done)
+    {
+        int randomNumber = arc4random() % [notes count];
+        while([[completed objectAtIndex:randomNumber] isEqualToString:@"1"])
+        {
+            randomNumber = arc4random() % [notes count];
+        }
+        NSMutableDictionary *scale = [[NSMutableDictionary alloc] init];
+        [scale setValue:[notes objectAtIndex:randomNumber] forKey:@"Note"];
+        [scale setValue:[modes objectAtIndex:randomNumber] forKey:@"Mode"];
+        [scale setValue:[octaves objectAtIndex:randomNumber] forKey:@"Octaves"];
+        [scale setValue:[scaleTypes objectAtIndex:randomNumber] forKey:@"Type"];
+        [scale setValue:[NSString stringWithFormat:@"%i", randomNumber] forKey:@"Index"];
+        return scale;
+    }
+    return nil;
 }
 
 -(void)setScaleDoneAtIndex:(int)theIndex

@@ -17,17 +17,39 @@
 -(id)initWithGrade:(Grade *)theGrade
 {
     grade = theGrade;
-    currentScale = [grade getNextScale];
-    
     return [super init];
+}
+
+-(void)displayNewScale
+{
+    if([grade getNextScale] == nil)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratuations!" message:@"You've completed all of the scales for this grade!" delegate:self cancelButtonTitle:@"Yay!" otherButtonTitles: nil];
+        [alert show];
+    }else{
+        currentScale = [grade getNextScale];
+        [noteName setText:[currentScale objectForKey:@"Note"]];
+        [modeLabel setText:[currentScale objectForKey:@"Mode"]];
+        [octaveLabel setText:[[currentScale objectForKey:@"Octaves"] stringByAppendingString:@" Octaves"]];
+        [typeLabel setText:[currentScale objectForKey:@"Type"]];
+    }
+}
+
+-(void)tickPressed:(id)sender
+{
+    [grade setScaleDoneAtIndex:[[currentScale objectForKey:@"Index"]intValue]];
+    [self displayNewScale];
+}
+
+-(void)crossPressed:(id)sender
+{
+    [grade setScaleNotDoneAtIndex:[[currentScale objectForKey:@"Index"]intValue]];
+    [self displayNewScale];
 }
 
 - (void)viewDidLoad
 {
-    [noteName setText:[currentScale objectForKey:@"Note"]];
-    [modeLabel setText:[currentScale objectForKey:@"Mode"]];
-    [octaveLabel setText:[[currentScale objectForKey:@"Octaves"] stringByAppendingString:@" Octaves"]];
-    [typeLabel setText:[currentScale objectForKey:@"Type"]];
+    [self displayNewScale];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>Grade 1 Piano (ABRSM)</string>
+	<key>Notes</key>
+	<array>
+		<string>C</string>
+		<string>G</string>
+		<string>D</string>
+		<string>F</string>
+		<string>A</string>
+		<string>D</string>
+	</array>
+	<key>Modes</key>
+	<array>
+		<string>Major</string>
+		<string>Major</string>
+		<string>Major</string>
+		<string>Major</string>
+		<string>Minor</string>
+		<string>Minor</string>
+	</array>
+	<key>Octaves</key>
+	<array>
+		<string>2</string>
+		<string>2</string>
+		<string>2</string>
+		<string>2</string>
+		<string>2</string>
+		<string>2</string>
+	</array>
+	<key>Types</key>
+	<array>
+		<string>Scale</string>
+		<string>Scale</string>
+		<string>Scale</string>
+		<string>Scale</string>
+		<string>Scale</string>
+		<string>Scale</string>
+	</array>
+</dict>
+</plist>

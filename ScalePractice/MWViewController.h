@@ -12,4 +12,5 @@
 
 
 -(IBAction)buttonClicked:(id)sender;
+- (NSMutableDictionary *)getDictionaryForPlist:(NSString *)fileName;
 @end

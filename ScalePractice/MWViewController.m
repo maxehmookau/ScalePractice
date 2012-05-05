@@ -15,18 +15,20 @@
 @end
 
 @implementation MWViewController
-
+- (NSMutableDictionary *)getDictionaryForPlist:(NSString *)fileName
+{
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];
+    return [NSDictionary dictionaryWithContentsOfFile:plistPath];
+}
 
 -(void)buttonClicked:(id)sender
 {
-    
-    NSArray *notes = [NSArray arrayWithObjects:@"A", @"B", @"C", nil];
-    NSArray *modes = [NSArray arrayWithObjects:@"Major", @"Major", @"Minor", nil];
-    NSArray *octaves = [NSArray arrayWithObjects:@"2", @"2", @"1", nil];
-    NSArray *types = [NSArray arrayWithObjects:@"Scale", @"Scale", @"Arpeggio", nil];
-    Grade *grade1 = [[Grade alloc] initWithNotes:notes modes:modes octaves:octaves scaleTypes:types];
+    NSMutableDictionary *plistData = [self getDictionaryForPlist:@"ABRSMGrade1Piano"];
+    NSLog(@"%@", plistData);
+    Grade *grade1 = [[Grade alloc] initWithNotes:[plistData objectForKey:@"Notes"] modes:[plistData objectForKey:@"Modes"] octaves:[plistData objectForKey:@"Octaves"] scaleTypes:[plistData objectForKey:@"Types"]];
     
     PracticeViewController *nextVC = [[PracticeViewController alloc] initWithGrade:grade1];
+    [nextVC setTitle:[plistData objectForKey:@"Name"]];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.navigationController pushViewController:nextVC animated:YES];
 }
