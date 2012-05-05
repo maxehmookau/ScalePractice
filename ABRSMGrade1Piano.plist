@@ -3,12 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>Name</key>
-	<string>Grade 1 Piano (ABRSM)</string>
+	<string>Grade 1 - Piano</string>
 	<key>Notes</key>
 	<array>
 		<string>C</string>
 		<string>G</string>
 		<string>D</string>
+		<string>F</string>
+		<string>A</string>
+		<string>D</string>
+		<string>C</string>
+		<string>C</string>
+		<string>G</string>
 		<string>F</string>
 		<string>A</string>
 		<string>D</string>
@@ -22,6 +28,11 @@
 		<string>Minor</string>
 		<string>Minor</string>
 		<string>Major</string>
+		<string>Major</string>
+		<string>Major</string>
+		<string>Major</string>
+		<string>Minor</string>
+		<string>Minor</string>
 	</array>
 	<key>Octaves</key>
 	<array>
@@ -31,6 +42,12 @@
 		<string>2</string>
 		<string>2</string>
 		<string>2</string>
+		<string>1</string>
+		<string>1</string>
+		<string>1</string>
+		<string>1</string>
+		<string>1</string>
+		<string>1</string>
 	</array>
 	<key>Types</key>
 	<array>
@@ -40,6 +57,12 @@
 		<string>Scale</string>
 		<string>Scale</string>
 		<string>Scale</string>
+		<string>Contrary Motion</string>
+		<string>Broken Chord</string>
+		<string>Broken Chord</string>
+		<string>Broken Chord</string>
+		<string>Broken Chord</string>
+		<string>Broken Chord</string>
 	</array>
 </dict>
 </plist>
