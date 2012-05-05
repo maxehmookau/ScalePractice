@@ -1,5 +1,5 @@
 //
-//  MWViewController.h
+//  PracticeViewController.h
 //  ScalePractice
 //
 //  Created by Max Woolf on 05/05/2012.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MWViewController : UIViewController
+@interface PracticeViewController : UIViewController
 
-
--(IBAction)buttonClicked:(id)sender;
 @end

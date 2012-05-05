@@ -7,6 +7,7 @@
 //
 
 #import "MWViewController.h"
+#import "PracticeViewController.h"
 
 @interface MWViewController ()
 
@@ -14,8 +15,17 @@
 
 @implementation MWViewController
 
+
+-(void)buttonClicked:(id)sender
+{
+    PracticeViewController *nextVC = [[PracticeViewController alloc] init];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self.navigationController pushViewController:nextVC animated:YES];
+}
+
 - (void)viewDidLoad
 {
+    [self setTitle:@"Welcome"];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

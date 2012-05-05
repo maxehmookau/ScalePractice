@@ -15,6 +15,14 @@
 		5029AB7815553ECA0013DEA9 /* MWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029AB7715553ECA0013DEA9 /* MWAppDelegate.m */; };
 		5029AB7B15553ECA0013DEA9 /* MWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029AB7A15553ECA0013DEA9 /* MWViewController.m */; };
 		5029AB7E15553ECA0013DEA9 /* MWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB7C15553ECA0013DEA9 /* MWViewController.xib */; };
+		5029AB8B15554A390013DEA9 /* ABRSMGrade1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB8915554A390013DEA9 /* ABRSMGrade1.png */; };
+		5029AB8C15554A390013DEA9 /* ABRSMGrade1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB8A15554A390013DEA9 /* ABRSMGrade1@2x.png */; };
+		5029AB9015554E560013DEA9 /* PracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029AB8E15554E560013DEA9 /* PracticeViewController.m */; };
+		5029AB9115554E560013DEA9 /* PracticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB8F15554E560013DEA9 /* PracticeViewController.xib */; };
+		5029AB961555522B0013DEA9 /* 19-check.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB921555522B0013DEA9 /* 19-check.png */; };
+		5029AB971555522B0013DEA9 /* 19-check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB931555522B0013DEA9 /* 19-check@2x.png */; };
+		5029AB981555522B0013DEA9 /* 20-no.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB941555522B0013DEA9 /* 20-no.png */; };
+		5029AB991555522B0013DEA9 /* 20-no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB951555522B0013DEA9 /* 20-no@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +39,15 @@
 		5029AB7915553ECA0013DEA9 /* MWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWViewController.h; sourceTree = "<group>"; };
 		5029AB7A15553ECA0013DEA9 /* MWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWViewController.m; sourceTree = "<group>"; };
 		5029AB7D15553ECA0013DEA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MWViewController.xib; sourceTree = "<group>"; };
+		5029AB8915554A390013DEA9 /* ABRSMGrade1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ABRSMGrade1.png; path = Images/ABRSMGrade1.png; sourceTree = "<group>"; };
+		5029AB8A15554A390013DEA9 /* ABRSMGrade1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ABRSMGrade1@2x.png"; path = "Images/ABRSMGrade1@2x.png"; sourceTree = "<group>"; };
+		5029AB8D15554E560013DEA9 /* PracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeViewController.h; sourceTree = "<group>"; };
+		5029AB8E15554E560013DEA9 /* PracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeViewController.m; sourceTree = "<group>"; };
+		5029AB8F15554E560013DEA9 /* PracticeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PracticeViewController.xib; sourceTree = "<group>"; };
+		5029AB921555522B0013DEA9 /* 19-check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-check.png"; sourceTree = "<group>"; };
+		5029AB931555522B0013DEA9 /* 19-check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-check@2x.png"; sourceTree = "<group>"; };
+		5029AB941555522B0013DEA9 /* 20-no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-no.png"; sourceTree = "<group>"; };
+		5029AB951555522B0013DEA9 /* 20-no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-no@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +94,15 @@
 		5029AB6D15553ECA0013DEA9 /* ScalePractice */ = {
 			isa = PBXGroup;
 			children = (
+				5029AB8815554A260013DEA9 /* Images */,
 				5029AB7615553ECA0013DEA9 /* MWAppDelegate.h */,
 				5029AB7715553ECA0013DEA9 /* MWAppDelegate.m */,
 				5029AB7915553ECA0013DEA9 /* MWViewController.h */,
 				5029AB7A15553ECA0013DEA9 /* MWViewController.m */,
 				5029AB7C15553ECA0013DEA9 /* MWViewController.xib */,
+				5029AB8D15554E560013DEA9 /* PracticeViewController.h */,
+				5029AB8E15554E560013DEA9 /* PracticeViewController.m */,
+				5029AB8F15554E560013DEA9 /* PracticeViewController.xib */,
 				5029AB6E15553ECA0013DEA9 /* Supporting Files */,
 			);
 			path = ScalePractice;
@@ -96,6 +117,19 @@
 				5029AB7515553ECA0013DEA9 /* ScalePractice-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5029AB8815554A260013DEA9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5029AB921555522B0013DEA9 /* 19-check.png */,
+				5029AB931555522B0013DEA9 /* 19-check@2x.png */,
+				5029AB941555522B0013DEA9 /* 20-no.png */,
+				5029AB951555522B0013DEA9 /* 20-no@2x.png */,
+				5029AB8915554A390013DEA9 /* ABRSMGrade1.png */,
+				5029AB8A15554A390013DEA9 /* ABRSMGrade1@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +185,13 @@
 			files = (
 				5029AB7215553ECA0013DEA9 /* InfoPlist.strings in Resources */,
 				5029AB7E15553ECA0013DEA9 /* MWViewController.xib in Resources */,
+				5029AB8B15554A390013DEA9 /* ABRSMGrade1.png in Resources */,
+				5029AB8C15554A390013DEA9 /* ABRSMGrade1@2x.png in Resources */,
+				5029AB9115554E560013DEA9 /* PracticeViewController.xib in Resources */,
+				5029AB961555522B0013DEA9 /* 19-check.png in Resources */,
+				5029AB971555522B0013DEA9 /* 19-check@2x.png in Resources */,
+				5029AB981555522B0013DEA9 /* 20-no.png in Resources */,
+				5029AB991555522B0013DEA9 /* 20-no@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +205,7 @@
 				5029AB7415553ECA0013DEA9 /* main.m in Sources */,
 				5029AB7815553ECA0013DEA9 /* MWAppDelegate.m in Sources */,
 				5029AB7B15553ECA0013DEA9 /* MWViewController.m in Sources */,
+				5029AB9015554E560013DEA9 /* PracticeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +279,12 @@
 		5029AB8215553ECA0013DEA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScalePractice/ScalePractice-Prefix.pch";
 				INFOPLIST_FILE = "ScalePractice/ScalePractice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D0BDDB90-9DEA-494A-AA9F-1B2E494367C6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -248,10 +292,12 @@
 		5029AB8315553ECA0013DEA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScalePractice/ScalePractice-Prefix.pch";
 				INFOPLIST_FILE = "ScalePractice/ScalePractice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D0BDDB90-9DEA-494A-AA9F-1B2E494367C6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
