@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Grade.h"
 @interface PracticeViewController : UIViewController
+{
+    Grade *grade;
+    IBOutlet UILabel *noteName;
+    IBOutlet UILabel *modeLabel;
+    IBOutlet UILabel *octaveLabel;
+    IBOutlet UILabel *typeLabel;
+    NSDictionary *currentScale;
+}
 
+-(id)initWithGrade:(Grade *)theGrade;
 @end

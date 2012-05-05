@@ -23,6 +23,7 @@
 		5029AB971555522B0013DEA9 /* 19-check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB931555522B0013DEA9 /* 19-check@2x.png */; };
 		5029AB981555522B0013DEA9 /* 20-no.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB941555522B0013DEA9 /* 20-no.png */; };
 		5029AB991555522B0013DEA9 /* 20-no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB951555522B0013DEA9 /* 20-no@2x.png */; };
+		50FF5C4515555628006256F1 /* Grade.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF5C4415555628006256F1 /* Grade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		5029AB931555522B0013DEA9 /* 19-check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-check@2x.png"; sourceTree = "<group>"; };
 		5029AB941555522B0013DEA9 /* 20-no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-no.png"; sourceTree = "<group>"; };
 		5029AB951555522B0013DEA9 /* 20-no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-no@2x.png"; sourceTree = "<group>"; };
+		50FF5C4315555628006256F1 /* Grade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grade.h; path = ../Grade.h; sourceTree = "<group>"; };
+		50FF5C4415555628006256F1 /* Grade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grade.m; path = ../Grade.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				5029AB8E15554E560013DEA9 /* PracticeViewController.m */,
 				5029AB8F15554E560013DEA9 /* PracticeViewController.xib */,
 				5029AB6E15553ECA0013DEA9 /* Supporting Files */,
+				50FF5C4315555628006256F1 /* Grade.h */,
+				50FF5C4415555628006256F1 /* Grade.m */,
 			);
 			path = ScalePractice;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				5029AB7815553ECA0013DEA9 /* MWAppDelegate.m in Sources */,
 				5029AB7B15553ECA0013DEA9 /* MWViewController.m in Sources */,
 				5029AB9015554E560013DEA9 /* PracticeViewController.m in Sources */,
+				50FF5C4515555628006256F1 /* Grade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +327,7 @@
 				5029AB8315553ECA0013DEA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
