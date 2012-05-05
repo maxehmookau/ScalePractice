@@ -7,6 +7,7 @@
 //
 
 #import "PracticeViewController.h"
+#import "GradeListViewContoller.h"
 
 @interface PracticeViewController ()
 
@@ -47,8 +48,15 @@
     [self displayNewScale];
 }
 
+-(void)showScaleList
+{
+    GradeListViewContoller *listVC = [[GradeListViewContoller alloc] initWithGrade:grade];
+    [self presentModalViewController:listVC animated:YES];
+}
+
 - (void)viewDidLoad
 {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(showScaleList)];
     [self displayNewScale];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

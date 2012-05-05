@@ -25,6 +25,10 @@
 		5029AB991555522B0013DEA9 /* 20-no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029AB951555522B0013DEA9 /* 20-no@2x.png */; };
 		50FF5C4515555628006256F1 /* Grade.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF5C4415555628006256F1 /* Grade.m */; };
 		50FF5C491555672E006256F1 /* ABRSMGrade1Piano.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FF5C481555672E006256F1 /* ABRSMGrade1Piano.plist */; };
+		50FF5C4D15557415006256F1 /* GradeListViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF5C4B15557415006256F1 /* GradeListViewContoller.m */; };
+		50FF5C4E15557415006256F1 /* GradeListViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FF5C4C15557415006256F1 /* GradeListViewContoller.xib */; };
+		50FF5C5115557638006256F1 /* 105-piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 50FF5C4F15557638006256F1 /* 105-piano.png */; };
+		50FF5C5215557638006256F1 /* 105-piano@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50FF5C5015557638006256F1 /* 105-piano@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,11 @@
 		50FF5C4315555628006256F1 /* Grade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grade.h; path = ../Grade.h; sourceTree = "<group>"; };
 		50FF5C4415555628006256F1 /* Grade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grade.m; path = ../Grade.m; sourceTree = "<group>"; };
 		50FF5C481555672E006256F1 /* ABRSMGrade1Piano.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ABRSMGrade1Piano.plist; sourceTree = "<group>"; };
+		50FF5C4A15557415006256F1 /* GradeListViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradeListViewContoller.h; sourceTree = "<group>"; };
+		50FF5C4B15557415006256F1 /* GradeListViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradeListViewContoller.m; sourceTree = "<group>"; };
+		50FF5C4C15557415006256F1 /* GradeListViewContoller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradeListViewContoller.xib; sourceTree = "<group>"; };
+		50FF5C4F15557638006256F1 /* 105-piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "105-piano.png"; sourceTree = "<group>"; };
+		50FF5C5015557638006256F1 /* 105-piano@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "105-piano@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				5029AB8815554A260013DEA9 /* Images */,
+				50FF5C4A15557415006256F1 /* GradeListViewContoller.h */,
+				50FF5C4B15557415006256F1 /* GradeListViewContoller.m */,
+				50FF5C4C15557415006256F1 /* GradeListViewContoller.xib */,
 				5029AB7615553ECA0013DEA9 /* MWAppDelegate.h */,
 				5029AB7715553ECA0013DEA9 /* MWAppDelegate.m */,
 				5029AB7915553ECA0013DEA9 /* MWViewController.h */,
@@ -130,6 +142,8 @@
 		5029AB8815554A260013DEA9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				50FF5C4F15557638006256F1 /* 105-piano.png */,
+				50FF5C5015557638006256F1 /* 105-piano@2x.png */,
 				5029AB921555522B0013DEA9 /* 19-check.png */,
 				5029AB931555522B0013DEA9 /* 19-check@2x.png */,
 				5029AB941555522B0013DEA9 /* 20-no.png */,
@@ -209,6 +223,9 @@
 				5029AB981555522B0013DEA9 /* 20-no.png in Resources */,
 				5029AB991555522B0013DEA9 /* 20-no@2x.png in Resources */,
 				50FF5C491555672E006256F1 /* ABRSMGrade1Piano.plist in Resources */,
+				50FF5C4E15557415006256F1 /* GradeListViewContoller.xib in Resources */,
+				50FF5C5115557638006256F1 /* 105-piano.png in Resources */,
+				50FF5C5215557638006256F1 /* 105-piano@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +241,7 @@
 				5029AB7B15553ECA0013DEA9 /* MWViewController.m in Sources */,
 				5029AB9015554E560013DEA9 /* PracticeViewController.m in Sources */,
 				50FF5C4515555628006256F1 /* Grade.m in Sources */,
+				50FF5C4D15557415006256F1 /* GradeListViewContoller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 @implementation Grade
+@synthesize notes, modes, octaves, scaleTypes, completed;
 -(id)initWithNotes:(NSArray *)theNotes modes:(NSArray *)theModes octaves:(NSArray *)theOctaves scaleTypes:(NSArray *)theScaleTypes
 {
     notes = theNotes;
@@ -52,5 +53,10 @@
 -(void)setScaleNotDoneAtIndex:(int)theIndex
 {
     [completed replaceObjectAtIndex:theIndex withObject:@"0"];
+}
+
+-(int)getNumberOfScales
+{
+    return [completed count];
 }
 @end

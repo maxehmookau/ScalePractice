@@ -22,4 +22,5 @@
 -(void)displayNewScale;
 -(IBAction)tickPressed:(id)sender;
 -(IBAction)crossPressed:(id)sender;
+-(void)showScaleList;
 @end

@@ -15,4 +15,11 @@
 
 -(void)setScaleDoneAtIndex:(int)theIndex;
 -(void)setScaleNotDoneAtIndex:(int)theIndex;
+-(int)getNumberOfScales;
+
+@property (nonatomic) NSMutableArray *completed;
+@property (nonatomic) NSArray *notes;
+@property (nonatomic) NSArray *modes;
+@property (nonatomic) NSArray *octaves;
+@property (nonatomic) NSArray *scaleTypes;
 @end
