@@ -31,7 +31,8 @@
         currentScale = [grade getNextScale];
         [noteName setText:[currentScale objectForKey:@"Note"]];
         [modeLabel setText:[currentScale objectForKey:@"Mode"]];
-        [octaveLabel setText:[[currentScale objectForKey:@"Octaves"] stringByAppendingString:@" Octaves"]];
+        [handsLabel setText:[currentScale objectForKey:@"Hands"]];
+        [octaveLabel setText:[[currentScale objectForKey:@"Octaves"] stringByAppendingString:@" Octave"]];
         [typeLabel setText:[currentScale objectForKey:@"Type"]];
     }
 }

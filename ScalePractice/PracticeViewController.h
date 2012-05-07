@@ -15,6 +15,7 @@
     IBOutlet UILabel *modeLabel;
     IBOutlet UILabel *octaveLabel;
     IBOutlet UILabel *typeLabel;
+    IBOutlet UILabel *handsLabel;
     NSDictionary *currentScale;
 }
 

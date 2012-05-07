@@ -18,6 +18,13 @@
 {
     [self dismissModalViewControllerAnimated:YES];
 }
+
+-(void)startAgain:(id)sender
+{
+    [self dismissModalViewControllerAnimated:YES];
+    [grade startAgain];
+}
+
 -(id)initWithGrade:(Grade *)theGrade
 {
     grade = theGrade;
@@ -40,7 +47,7 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
     [cell.textLabel setTextColor:[UIColor colorWithWhite:1 alpha:1]];
     [cell.textLabel setText:[NSString stringWithFormat:@"%@ %@", [[grade notes]objectAtIndex:indexPath.row], [[grade modes]objectAtIndex:indexPath.row]]];
-    [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@ Octaves - %@", [[grade octaves]objectAtIndex:indexPath.row], [[grade scaleTypes]objectAtIndex:indexPath.row]]];
+    [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@ Octave %@ - %@", [[grade octaves]objectAtIndex:indexPath.row], [[grade scaleTypes]objectAtIndex:indexPath.row], [[grade hands]objectAtIndex:indexPath.row]]];
     if([[[grade completed]objectAtIndex:indexPath.row]isEqualToString:@"1"])
     {
         [cell setAccessoryType:UITableViewCellAccessoryCheckmark];

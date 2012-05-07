@@ -2,19 +2,28 @@
 #include <stdlib.h>
 
 @implementation Grade
-@synthesize notes, modes, octaves, scaleTypes, completed;
--(id)initWithNotes:(NSArray *)theNotes modes:(NSArray *)theModes octaves:(NSArray *)theOctaves scaleTypes:(NSArray *)theScaleTypes
+@synthesize notes, modes, octaves, scaleTypes, completed, hands;
+-(id)initWithNotes:(NSArray *)theNotes modes:(NSArray *)theModes octaves:(NSArray *)theOctaves scaleTypes:(NSArray *)theScaleTypes hands:(NSArray *)theHands
 {
     notes = theNotes;
     modes = theModes;
     octaves = theOctaves;
     scaleTypes = theScaleTypes;
+    hands = theHands;
     completed = [[NSMutableArray alloc] init];
     for(int x = 0; x < [notes count]; x++)
     {
         [completed addObject:@"0"];
     }
     return [super init];
+}
+
+-(void)startAgain
+{
+    for (int x = 0; x < [completed count]; x++)
+    {
+        [completed replaceObjectAtIndex:x withObject:@"0"];
+    }
 }
 
 -(NSDictionary *)getNextScale
@@ -39,6 +48,7 @@
         [scale setValue:[modes objectAtIndex:randomNumber] forKey:@"Mode"];
         [scale setValue:[octaves objectAtIndex:randomNumber] forKey:@"Octaves"];
         [scale setValue:[scaleTypes objectAtIndex:randomNumber] forKey:@"Type"];
+        [scale setValue:[hands objectAtIndex:randomNumber] forKey:@"Hands"];
         [scale setValue:[NSString stringWithFormat:@"%i", randomNumber] forKey:@"Index"];
         return scale;
     }

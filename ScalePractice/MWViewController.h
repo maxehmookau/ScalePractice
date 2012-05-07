@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UAStoreFrontDelegate.h"
 
-@interface MWViewController : UIViewController
+@interface MWViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UAStoreFrontDelegate>
+{
+    IBOutlet UITableView *table;
+}
 
 
--(IBAction)buttonClicked:(id)sender;
 - (NSMutableDictionary *)getDictionaryForPlist:(NSString *)fileName;
+-(void)loadShop;
 @end

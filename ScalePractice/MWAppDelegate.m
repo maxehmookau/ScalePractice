@@ -7,7 +7,7 @@
 //
 
 #import "MWAppDelegate.h"
-
+#import "UAirship.h"
 #import "MWViewController.h"
 
 @implementation MWAppDelegate
@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Init Airship launch options
+    NSMutableDictionary *takeOffOptions = [[NSMutableDictionary alloc] init];
+    [takeOffOptions setValue:launchOptions forKey:UAirshipTakeOffOptionsLaunchOptionsKey];
+    
+    // Create Airship singleton that's used to talk to Urban Airship servers.
+    // Please populate AirshipConfig.plist with your info from http://go.urbanairship.com
+    [UAirship takeOff:takeOffOptions];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[MWViewController alloc] initWithNibName:@"MWViewController" bundle:nil];
@@ -52,6 +59,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    [UAirship land];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
